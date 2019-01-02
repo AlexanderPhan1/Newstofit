@@ -8,10 +8,10 @@ var app = express();
 
 // Require handlebars
 var exphbs = require('express-handlebars');
-// Create `ExpressHandlebars` instance with a default layout.
+// Create `ExpressHandlebars` 
 var hbs = exphbs.create({
   defaultLayout: 'main',
-  // Specify helpers which are only registered on this instance.
+ 
   helpers: {
     addOne: function(value, options){
       return parseInt(value) + 1;
@@ -22,7 +22,7 @@ var hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-// Require request and cheerio. This makes the scraping possible
+// Require request and cheerio.
 var request = require('request');
 var cheerio = require('cheerio');
 
@@ -40,11 +40,11 @@ db.on('error', function(err) {
 });
 
 // Require our scrapedData and comment models
-var ScrapedData = require('./scrapedDataModel');
+var ScrapedData = require('./ScrappedDataVersion');
 
 // Scrape data when app starts
 var options = {
-  url: 'https://www.bodybuilding.com/fun/whats-new.html',
+  url: 'https://www.generalnews.com',
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
   }
