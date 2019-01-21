@@ -1,0 +1,25 @@
+.jumbotron {
+    background: orange;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(cyan, magenta, yellow);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(cyan, magenta, yellow);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(cyan, magenta, yellow);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(cyan, magenta, yellow);
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif
+    
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.panel-heading {
+    background-color: lightcoral;
+}

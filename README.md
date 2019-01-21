@@ -1,1 +1,1 @@
-# Newstofit
+# News all to fit Homework Assignment
